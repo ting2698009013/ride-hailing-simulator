@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="数据结构">
+      <UniqueIdentifier>{a1a1a1a1-1111-1111-1111-111111111111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="核心引擎">
+      <UniqueIdentifier>{b2b2b2b2-2222-2222-2222-222222222222}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="数据模型">
+      <UniqueIdentifier>{c3c3c3c3-3333-3333-3333-333333333333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="图形界面">
+      <UniqueIdentifier>{d4d4d4d4-4444-4444-4444-444444444444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="自检测试">
+      <UniqueIdentifier>{e5e5e5e5-5555-5555-5555-555555555555}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\CityGrid.cpp">
+      <Filter>核心引擎</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\DispatchEngine.cpp">
+      <Filter>核心引擎</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\Simulator.cpp">
+      <Filter>核心引擎</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\EasyXRenderer.cpp">
+      <Filter>图形界面</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tests\SelfTest.cpp">
+      <Filter>自检测试</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\models\Driver.h">
+      <Filter>数据模型</Filter>
+    </ClInclude>
+    <ClInclude Include="src\models\Order.h">
+      <Filter>数据模型</Filter>
+    </ClInclude>
+    <ClInclude Include="src\structures\SinglyLinkedList.h">
+      <Filter>数据结构</Filter>
+    </ClInclude>
+    <ClInclude Include="src\structures\CircularQueue.h">
+      <Filter>数据结构</Filter>
+    </ClInclude>
+    <ClInclude Include="src\structures\MinHeap.h">
+      <Filter>数据结构</Filter>
+    </ClInclude>
+    <ClInclude Include="src\structures\DynamicArray.h">
+      <Filter>数据结构</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\CityGrid.h">
+      <Filter>核心引擎</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\DispatchEngine.h">
+      <Filter>核心引擎</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\Simulator.h">
+      <Filter>核心引擎</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\Logger.h">
+      <Filter>核心引擎</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\EasyXRenderer.h">
+      <Filter>图形界面</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tests\SelfTest.h">
+      <Filter>自检测试</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
