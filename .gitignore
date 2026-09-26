@@ -12,6 +12,7 @@ x64/
 x86/
 out/
 build/
+build-*/
 *.obj
 *.pdb
 *.ilk
@@ -25,4 +26,3 @@ build/
 # OS files
 .DS_Store
 Thumbs.db
-

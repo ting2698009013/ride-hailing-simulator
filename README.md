@@ -1,5 +1,7 @@
 # 智能网约车平台区域实时分布式派单与动态运力调度模拟系统
 
+[![core-tests](https://github.com/ting2698009013/ride-hailing-simulator/actions/workflows/core-tests.yml/badge.svg)](https://github.com/ting2698009013/ride-hailing-simulator/actions/workflows/core-tests.yml)
+
 ## 项目简介
 
 本项目是同济大学《数据结构与算法设计》课程设计题目3的实现。系统模拟网约车平台的派单与运力调度逻辑：在 1000×1000 的虚拟城市坐标系中划分 100×100 网格，手工实现单向链表、循环队列、最小堆等核心数据结构，完成空间索引、批量派单、供需失衡检测和跨网格运力调度，并通过 EasyX 图形界面实时可视化供需热力图、派单日志和全局统计指标。
@@ -76,14 +78,17 @@ RideHailingSimulator/
 3. 按 `Ctrl + F5`（开始执行不调试）或 `F5`（开始调试）编译并运行
 4. 编译成功后会自动弹出图形窗口
 
-### 运行自检测试
+### 运行无界面核心自检
 
-如需运行手工数据结构和核心算法的自检测试：
+仓库提供独立的 CMake 测试目标，不需要安装 EasyX。它覆盖链表、循环队列、最小堆、动态数组、网格索引、订单匹配、超时取消、模拟器重置和热点调度：
 
-1. 打开 `src/config.h`
-2. 取消注释第 121 行的 `#define RUN_SELF_TEST`（即去掉前面的 `//`）
-3. 重新编译运行，程序会先在控制台输出自检结果，按回车后进入图形界面
-4. 测试完成后记得重新注释掉该宏，恢复正常的图形界面启动
+```powershell
+cmake -S . -B build
+cmake --build build --config Release
+.\build\Release\ride_hailing_tests.exe
+```
+
+在 Linux 或单配置生成器下，最后一条命令为 `./build/ride_hailing_tests`。GitHub Actions 会在每次推送和 Pull Request 时构建并运行同一组测试。
 
 ## 控制按钮及快捷键
 
